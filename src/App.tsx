@@ -3,6 +3,7 @@ import theme from "./theme"
 import HeaderAppBar from "./Common/HeaderNavbar";
 import FooterBar from "./Common/FooterBar";
 import ServicesPage from "./Pages/ServicesPage";
+import Background from "./Assets/Images/sampleBackground.jpg"
 
 const App = () => {
     const WindowBoxStyle = {
@@ -14,7 +15,9 @@ const App = () => {
     }
 
     const bodyStyle = {
-        background: theme.palette.primary.dark,
+        // background: theme.palette.primary.dark,
+        backgroundImage: `url(${Background})`,
+        backgroundSize: "250px 250px ",
         margin: 0
     }
     return <>

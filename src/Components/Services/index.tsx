@@ -47,7 +47,7 @@ const Services = () => {
         display: 'flex',
         marginTop: 4,
         borderRadius: 0,
-        opacity: "95%"
+        opacity: "85%"
     }
 
     const mobileCardStyle = {
@@ -86,6 +86,7 @@ const Services = () => {
                     <Card
                         raised
                         sx={cardStyle}
+                        
                     >
                         <CardMedia
                             component="img"
@@ -100,7 +101,7 @@ const Services = () => {
                             flexDirection: 'column',
                         }}>
                             <CardContent sx={{
-                                padding: 5
+                                padding: 5,
                             }}>
                                 <Typography variant="h4" sx={serviceTitle}>
                                     {service}
@@ -130,12 +131,9 @@ const Services = () => {
                             image={TempImage}
                             alt={service}
                         />
-                        <Box sx={{
-                            // display: 'flex',
-                            // flexDirection: 'column',
-                        }}>
+                        <Box>
                             <CardContent sx={{
-                                padding: 5
+                                padding: 5,
                             }}>
                                 <Typography variant="h4" sx={serviceTitle}>
                                     {service}
