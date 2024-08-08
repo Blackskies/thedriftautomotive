@@ -24,7 +24,7 @@ const HeaderAppBar = () => {
     const AppBarStyle = {
         background: theme.palette.primary.dark,
         width: '100%',
-        borderBottom: '0.4rem solid',
+        borderBottom: '0.3rem solid',
         borderColor: theme.palette.primary.main,
         opacity: "90%"
     }
@@ -55,8 +55,8 @@ const HeaderAppBar = () => {
     }
 
     const HeaderButtonStyle = {
-        color: 'inherit',
-        fontSize: 15,
+        color: theme.palette.primary.main,
+        fontSize: 20,
         fontWeight: 700,
         mx: '1rem'
     }

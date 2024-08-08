@@ -86,7 +86,7 @@ const Services = () => {
                     <Card
                         raised
                         sx={cardStyle}
-                        
+
                     >
                         <CardMedia
                             component="img"
