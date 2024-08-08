@@ -10,16 +10,16 @@ const theme = createTheme({
             default: "#1D1D1D",
         },
         primary: {
-            main: "#ff9901",
+            main: "#FF9100",
             dark: "#1D1D1D",
             light: "#ffd699",
-            contrastText: "#f5f5f5"
+            contrastText: "#f5f5f5",
         },
         secondary: {
-            main: "#995b00",
+            main: "#FF4800",
             dark: "#190f00",
             light: "#3B3B3B",
-            contrastText: "#ffeacc"
+            contrastText: "#FFB600"
         }
     },
 

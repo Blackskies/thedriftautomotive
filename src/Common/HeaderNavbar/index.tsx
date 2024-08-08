@@ -26,6 +26,7 @@ const HeaderAppBar = () => {
         width: '100%',
         borderBottom: '0.4rem solid',
         borderColor: theme.palette.primary.main,
+        opacity: "90%"
     }
 
     const WindowBoxStyle = {
