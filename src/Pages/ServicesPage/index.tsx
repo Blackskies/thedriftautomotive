@@ -14,10 +14,10 @@ const ServicesPage = () => {
     }
     return <>
         <Container
-            maxWidth="xl"
+            maxWidth="lg"
             sx={containerStyle}
         >
-            <Typography variant="h2" sx={typographyStyle}>Services</Typography>
+            <Typography variant="h3" sx={typographyStyle}>Services</Typography>
             <Services />
         </Container>
     </>

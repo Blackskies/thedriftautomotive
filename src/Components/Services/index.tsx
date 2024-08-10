@@ -60,12 +60,14 @@ const Services = () => {
     const serviceTitle = {
         color: theme.palette.secondary.main,
         fontWeight: 700,
+        fontSize: 25
     }
-
+    
     const serviceDescription = {
         color: theme.palette.primary.contrastText,
         fontWeight: 500,
-        marginTop: 3
+        marginTop: 3,
+        fontSize: 20
     }
 
     const desktopView = {
@@ -103,10 +105,10 @@ const Services = () => {
                             <CardContent sx={{
                                 padding: 5,
                             }}>
-                                <Typography variant="h4" sx={serviceTitle}>
+                                <Typography sx={serviceTitle}>
                                     {service}
                                 </Typography>
-                                <Typography variant="h5" color="text.secondary" sx={serviceDescription}>
+                                <Typography color="text.secondary" sx={serviceDescription}>
                                     {servicesList[service]['description']}
                                 </Typography>
                             </CardContent>

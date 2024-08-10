@@ -4,6 +4,7 @@ import HeaderAppBar from "./Common/HeaderNavbar";
 import FooterBar from "./Common/FooterBar";
 import ServicesPage from "./Pages/ServicesPage";
 import Background from "./Assets/Images/sampleBackground.jpg"
+import ContactUs from "./Pages/ContactUsPage";
 
 const App = () => {
     const WindowBoxStyle = {
@@ -25,6 +26,7 @@ const App = () => {
             <ThemeProvider theme={theme}>
                 <HeaderAppBar />
                 <ServicesPage />
+                <ContactUs />
                 <FooterBar />
             </ThemeProvider>
         </Grid>
