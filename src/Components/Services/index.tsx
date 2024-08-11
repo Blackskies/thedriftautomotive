@@ -52,7 +52,7 @@ const Services = () => {
     }
 
     const cardStyle = {
-        background: theme.palette.primary.main,
+        background: theme.palette.primary.dark,
         display: 'flex',
         marginTop: 4,
         borderRadius: 0,
@@ -60,7 +60,7 @@ const Services = () => {
     }
 
     const mobileCardStyle = {
-        background: theme.palette.primary.main,
+        background: theme.palette.primary.dark,
         marginTop: 4,
         borderRadius: 0,
         opacity: "95%"
@@ -116,7 +116,7 @@ const Services = () => {
                             flexDirection: 'column',
                         }}>
                             <CardContent sx={{
-                                padding: 3,
+                                padding: 5,
                             }}>
                                 <Typography sx={serviceTitle}>
                                     {service}
@@ -148,12 +148,12 @@ const Services = () => {
                         />
                         <Box>
                             <CardContent sx={{
-                                padding: 5,
+                                padding: 3,
                             }}>
-                                <Typography variant="h4" sx={serviceTitle}>
+                                <Typography sx={serviceTitle}>
                                     {service}
                                 </Typography>
-                                <Typography variant="h5" color="text.secondary" sx={serviceDescription}>
+                                <Typography sx={serviceDescription}>
                                     {servicesList[service]['description']}
                                 </Typography>
                             </CardContent>
