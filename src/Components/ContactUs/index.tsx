@@ -123,14 +123,14 @@ const ContactUs = () => {
                 <Grid item md={7}>
                     <iframe
                         src={mapUrl}
-                        width="99%"
-                        height="99%"
+                        width="100%"
+                        height="100%"
                         loading="lazy"
-                        style={{ filter: "invert(90%)" }}
+                        style={{ filter: "invert(90%)", border: 0 }}
                     ></iframe>
-                </Grid>
             </Grid>
-        </ Box>
+        </Grid>
+    </ Box >
         <Box
             mt={4}
             sx={mobileView}
@@ -209,8 +209,9 @@ const ContactUs = () => {
                     <iframe
                         src={mapUrl}
                         width="100%"
-                        height="400"
+                        height="350"
                         loading="lazy"
+                        style={{ filter: "invert(90%)", border: 0 }}
                     ></iframe>
                 </Grid>
             </Grid>
