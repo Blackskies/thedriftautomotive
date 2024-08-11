@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material"
-import HeaderLogo from "../../Common/HeaderLogo"
 import WhereToVoteIcon from '@mui/icons-material/WhereToVote';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 import EmailIcon from '@mui/icons-material/Email';
