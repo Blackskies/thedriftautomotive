@@ -27,7 +27,6 @@ const ContactUs = () => {
     const iconsStyle = {
         color: theme.palette.secondary.main,
         fontSize: 30,
-        marginRight: "1rem"
     }
 
     const addressTextBlock = {
@@ -62,10 +61,10 @@ const ContactUs = () => {
 
                     {/* Address Content block */}
                     <Grid container mt={2}>
-                        <Grid md={1}>
+                        <Grid md={2}>
                             <WhereToVoteIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={11} >
+                        <Grid md={10} >
                             {
                                 addressList.map((element, indx) => (
                                     <Typography
@@ -81,10 +80,10 @@ const ContactUs = () => {
 
                     {/* Phone Content block */}
                     <Grid container mt={2}>
-                        <Grid md={1}>
+                        <Grid md={2}>
                             <PhoneCallbackIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={11}>
+                        <Grid md={10}>
                             {
                                 phoneNumbers.map((element) => (
                                     <Typography
@@ -100,10 +99,10 @@ const ContactUs = () => {
 
                     {/* Email Content block */}
                     <Grid container sx={{ marginTop: 2 }}>
-                        <Grid md={1}>
+                        <Grid md={2}>
                             <EmailIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={11}>
+                        <Grid md={10}>
                             {
                                 emailList.map((element) => (
                                     <Typography
@@ -146,10 +145,10 @@ const ContactUs = () => {
 
                     {/* Address Content block */}
                     <Grid container mt={2}>
-                        <Grid md={1}>
+                        <Grid md={2}>
                             <WhereToVoteIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={11} >
+                        <Grid md={10} >
                             {
                                 addressList.map((element) => (
                                     <Typography
@@ -165,10 +164,10 @@ const ContactUs = () => {
 
                     {/* Phone Content block */}
                     <Grid container mt={2}>
-                        <Grid md={1}>
+                        <Grid md={2}>
                             <PhoneCallbackIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={11}>
+                        <Grid md={10}>
                             {
                                 phoneNumbers.map((element) => (
                                     <Typography
@@ -184,10 +183,10 @@ const ContactUs = () => {
 
                     {/* Email Content block */}
                     <Grid container sx={{ marginTop: 2 }}>
-                        <Grid md={1}>
+                        <Grid md={2}>
                             <EmailIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={11}>
+                        <Grid md={10}>
                             {
                                 emailList.map((element) => (
                                     <Typography
