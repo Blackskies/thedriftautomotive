@@ -1,6 +1,5 @@
 import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material";
 import theme from "../../theme";
-import TempImage from "../../Assets/Images/Services/bmwtemp.jpg"
 import Denting from '../../Assets/Images/Services/denting.jpg'
 import AirConditioning from '../../Assets/Images/Services/AirConditioning.jpg'
 import Battery from '../../Assets/Images/Services/battery.jpg'
@@ -140,7 +139,7 @@ const Services = () => {
                     >
                         <CardMedia
                             component="img"
-                            image={TempImage}
+                            image={servicesList[service]['image']}
                             alt={service}
                         />
                         <Box>
