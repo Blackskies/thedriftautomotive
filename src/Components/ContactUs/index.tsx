@@ -15,7 +15,7 @@ const ContactUs = () => {
         'Hyderabad',
         'Telangana 500075'
     ]
-    const phoneNumbers = ['+91 97007 22270']
+    const phoneNumbers = ['+91 97007 22270', '+91 99891 23375']
     const emailList = ['service@thedrift.co.in']
     const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.949910470616!2d78.2916798757796!3d17.41419130203124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93f6f2c2848f%3A0x2928738116621367!2sTHE%20DRIFT%20AUTOMOTIVE!5e0!3m2!1sen!2sin!4v1723278867997!5m2!1sen!2sin"
 
