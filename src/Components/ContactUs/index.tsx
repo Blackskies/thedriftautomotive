@@ -123,9 +123,10 @@ const ContactUs = () => {
                 <Grid item md={7}>
                     <iframe
                         src={mapUrl}
-                        width="100%"
-                        height="100%"
+                        width="99%"
+                        height="99%"
                         loading="lazy"
+                        style={{ filter: "invert(90%)" }}
                     ></iframe>
                 </Grid>
             </Grid>
@@ -145,10 +146,10 @@ const ContactUs = () => {
 
                     {/* Address Content block */}
                     <Grid container mt={2}>
-                        <Grid md={2}>
+                        <Grid sm={1} xs={2} item>
                             <WhereToVoteIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={10} >
+                        <Grid sm={11} xs={10} item>
                             {
                                 addressList.map((element) => (
                                     <Typography
@@ -164,10 +165,10 @@ const ContactUs = () => {
 
                     {/* Phone Content block */}
                     <Grid container mt={2}>
-                        <Grid md={2}>
+                        <Grid sm={1} xs={2}>
                             <PhoneCallbackIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={10}>
+                        <Grid sm={11} xs={10}>
                             {
                                 phoneNumbers.map((element) => (
                                     <Typography
@@ -183,10 +184,10 @@ const ContactUs = () => {
 
                     {/* Email Content block */}
                     <Grid container sx={{ marginTop: 2 }}>
-                        <Grid md={2}>
+                        <Grid sm={1} xs={2}>
                             <EmailIcon sx={iconsStyle} />
                         </Grid>
-                        <Grid md={10}>
+                        <Grid sm={11} xs={10}>
                             {
                                 emailList.map((element) => (
                                     <Typography

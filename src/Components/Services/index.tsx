@@ -121,7 +121,7 @@ const Services = () => {
                                 <Typography sx={serviceTitle}>
                                     {service}
                                 </Typography>
-                                <Typography color="text.secondary" sx={serviceDescription}>
+                                <Typography sx={serviceDescription}>
                                     {servicesList[service]['description']}
                                 </Typography>
                             </CardContent>
