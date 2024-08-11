@@ -42,6 +42,12 @@ const ContactUs = () => {
         display: { xs: 'block', md: 'none' }
     }
 
+    const mapStyle = {
+        filter: "invert(90%)",
+        border: 0,
+        width: "100%"
+    }
+
     return <>
         <Box
             mt={4}
@@ -123,14 +129,13 @@ const ContactUs = () => {
                 <Grid item md={7}>
                     <iframe
                         src={mapUrl}
-                        width="100%"
                         height="100%"
                         loading="lazy"
-                        style={{ filter: "invert(90%)", border: 0 }}
+                        style={mapStyle}
                     ></iframe>
+                </Grid>
             </Grid>
-        </Grid>
-    </ Box >
+        </ Box >
         <Box
             mt={4}
             sx={mobileView}
@@ -208,10 +213,10 @@ const ContactUs = () => {
                 <Grid>
                     <iframe
                         src={mapUrl}
-                        width="100%"
+
                         height="350"
                         loading="lazy"
-                        style={{ filter: "invert(90%)", border: 0 }}
+                        style={mapStyle}
                     ></iframe>
                 </Grid>
             </Grid>
