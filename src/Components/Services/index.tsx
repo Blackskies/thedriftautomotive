@@ -76,7 +76,8 @@ const Services = () => {
         color: theme.palette.primary.contrastText,
         fontWeight: 500,
         marginTop: 3,
-        fontSize: 20
+        fontSize: 20,
+        marginBottom: 1
     }
 
     const desktopView = {
@@ -85,6 +86,11 @@ const Services = () => {
 
     const mobileView = {
         display: { xs: 'block', md: 'none' }
+    }
+
+    const serviceImageStyle = {
+        width: "38%",
+        textShadow: "3px 3px 0 black",
     }
 
     return <>
@@ -101,9 +107,7 @@ const Services = () => {
                     >
                         <CardMedia
                             component="img"
-                            sx={{
-                                width: "38%"
-                            }}
+                            sx={serviceImageStyle}
                             image={servicesList[service]['image']}
                             alt={service}
                         />
@@ -112,7 +116,7 @@ const Services = () => {
                             flexDirection: 'column',
                         }}>
                             <CardContent sx={{
-                                padding: 5,
+                                padding: 3,
                             }}>
                                 <Typography sx={serviceTitle}>
                                     {service}
