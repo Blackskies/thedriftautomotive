@@ -1,4 +1,4 @@
-import { Grid, ThemeProvider, Typography } from "@mui/material";
+import { Grid, ThemeProvider } from "@mui/material";
 import theme from "./theme"
 import HeaderAppBar from "./Common/HeaderNavbar";
 import FooterBar from "./Common/FooterBar";

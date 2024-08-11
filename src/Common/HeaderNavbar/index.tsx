@@ -21,6 +21,18 @@ const HeaderAppBar = () => {
         setAnchorElNav(null);
     };
 
+    const scrollAndClose = (page: string) => {
+        handleCloseNavMenu();
+        if (pages.includes(page)) {
+            const elementToScroll = document.getElementById(page);
+            const elementPosition = elementToScroll.getBoundingClientRect().top;
+            window.scrollTo({
+                top: elementPosition - 30,
+                behavior: "smooth"
+            });
+        }
+    }
+
     const AppBarStyle = {
         background: theme.palette.primary.dark,
         width: '100%',
@@ -71,7 +83,7 @@ const HeaderAppBar = () => {
                 {pages.map((page) => (
                     <Button
                         key={page}
-                        onClick={handleCloseNavMenu}
+                        onClick={() => { scrollAndClose(page) }}
                         sx={HeaderButtonStyle}
                     >
                         {page}
@@ -99,13 +111,13 @@ const HeaderAppBar = () => {
                     onClose={handleCloseNavMenu}
                 >
                     {pages.map((page) => (
-                        <Button variant='text' key={page} sx={MobileDrawerButtonStyle} onClick={handleCloseNavMenu}>
+                        <Button variant='text' key={page} sx={MobileDrawerButtonStyle} onClick={() => { scrollAndClose(page) }}>
                             <Typography textAlign="center" sx={DrawerButtonTextStyle}>{page}</Typography>
                         </Button>
                     ))}
                 </Drawer>
             </Box>
-        </AppBar>
+        </AppBar >
     );
 }
 export default HeaderAppBar;

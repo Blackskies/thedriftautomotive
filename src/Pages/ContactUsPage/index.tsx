@@ -11,14 +11,14 @@ const ContactUsPage = () => {
     }
 
     return <>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" id="Contact Us">
 
             <Typography
                 noWrap
                 sx={typographyStyle}
                 variant="h3"
             >
-                Locate Us
+                Contact Us
             </Typography>
 
             <ContactUs />
