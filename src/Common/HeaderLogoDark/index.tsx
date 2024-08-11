@@ -24,7 +24,7 @@ const HeaderLogoDark = () => {
         fontFamily: 'Bernier',
         color: theme.palette.primary.contrastText,
         fontSize: 42,
-        textShadow: "3px 3px 0 " + theme.palette.secondary.main,
+        textShadow: "2px 2px 0 " + theme.palette.secondary.main,
     }
 
     return <>
