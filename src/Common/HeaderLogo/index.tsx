@@ -34,7 +34,7 @@ const HeaderLogo = () => {
                     variant="h5"
                     noWrap
                     component="a"
-                    href="#app-bar-with-responsive-menu"
+                    href="#"
                     sx={typographyStyle}
                 >
                     The Drift Automotive

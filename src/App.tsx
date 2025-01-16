@@ -1,10 +1,8 @@
-import { Grid, ThemeProvider } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import theme from "./theme"
-import HeaderAppBar from "./Common/HeaderNavbar";
-import FooterBar from "./Common/FooterBar";
-import ServicesPage from "./Pages/ServicesPage";
-import Background from "./Assets/Images/sampleBackground.jpg"
-import ContactUs from "./Pages/ContactUsPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainPage from "./Pages/MainPage";
+import AdminPage from "./Pages/AdminPage";
 
 const App = () => {
     const WindowBoxStyle = {
@@ -15,21 +13,16 @@ const App = () => {
         display: { xs: 'flex', md: 'none' }
     }
 
-    const bodyStyle = {
-        // background: theme.palette.primary.dark,
-        backgroundImage: `url(${Background})`,
-        backgroundSize: "250px 250px ",
-        margin: 0
-    }
+
     return <>
-        <Grid container sx={bodyStyle} maxWidth={"false"}>
-            <ThemeProvider theme={theme}>
-                <HeaderAppBar />
-                <ServicesPage />
-                <ContactUs />
-                <FooterBar />
-            </ThemeProvider>
-        </Grid>
+        <ThemeProvider theme={theme}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/admin" element={<AdminPage />}></Route>
+                    <Route path="/" element={<MainPage />}> </Route>
+                </Routes>
+            </BrowserRouter>
+        </ThemeProvider>
     </>
 };
 
