@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import theme from "../../theme";
-import valueIcon from "../../Assets/icons/human-resources.png";
+import valueIcon from "../../Assets/icons/diamond.png";
 
 interface props {
   title: string;

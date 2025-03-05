@@ -37,7 +37,7 @@ const HeaderLogoDark = () => {
                     variant="h5"
                     sx={typographyStyle}
                 >
-                    The Drift Automotive
+                    THE DRIFT AUTOMOTIVE
                 </Typography>
             </Grid>
         </Grid>

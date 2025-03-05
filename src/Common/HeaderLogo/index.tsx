@@ -37,7 +37,7 @@ const HeaderLogo = () => {
                     href="#"
                     sx={typographyStyle}
                 >
-                    The Drift Automotive
+                    THE DRIFT AUTOMOTIVE
                 </Typography>
             </Grid>
         </Grid>
