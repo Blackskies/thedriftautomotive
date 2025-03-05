@@ -33,7 +33,7 @@ const Hightlights = () => {
   return (
     <>
       <Box sx={desktopView}>
-        <Grid xl={12} sx={logoStyle}>
+        <Grid sx={logoStyle}>
           <img src={HightlightImage} width="100%" style={logoStyle} />
         </Grid>
 

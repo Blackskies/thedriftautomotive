@@ -1,10 +1,11 @@
 import { Grid } from "@mui/material";
 import HeaderAppBar from "../../Common/HeaderNavbar";
-import ServicesPage from "../ServicesPage";
+import ServicesPage from "../../Layouts/ServicesPage";
 import Background from "../../Assets/Images/sampleBackground.jpg";
 import FooterBar from "../../Common/FooterBar";
-import ContactUsPage from "../ContactUsPage";
-import HighlightsPage from "../HighlightsPage";
+import ContactUsPage from "../../Layouts/ContactUsPage";
+import HighlightsPage from "../../Layouts/HighlightsPage";
+import Values from "../../Layouts/Values";
 
 const MainPage = () => {
   const bodyStyle = {
@@ -19,6 +20,7 @@ const MainPage = () => {
         <HeaderAppBar />
         <HighlightsPage />
         <ServicesPage />
+        <Values />
         <ContactUsPage />
         <FooterBar />
       </Grid>

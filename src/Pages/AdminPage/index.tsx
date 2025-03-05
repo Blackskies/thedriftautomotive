@@ -1,6 +1,6 @@
 import HeaderAppBar from "../../Common/HeaderNavbar";
 import ContactUs from "../../Components/ContactUs";
-import ServicesPage from "../ServicesPage";
+import ServicesPage from "../../Layouts/ServicesPage";
 
 const AdminPage = () => {
     return <>
