@@ -17,7 +17,6 @@ const Services = () => {
     display: "flex",
     marginTop: 4,
     borderRadius: 0,
-    opacity: "85%",
     width: "100%",
   };
 
